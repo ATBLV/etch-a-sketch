@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        .img_logo {
+            background-image: url('logo.png');
+            background-size: 550px 550px;
+        }
+
+        img {
+            margin-top: 1%;
+            height: 50px;
+        }
+
+        html {
+            height: 100%;
+
+        }
+
+        body {
+            display: block;
+            margin: 0 auto;
+            background-color: crimson;
+            background-image: linear-gradient(crimson, blueviolet);
+            height: 100%;
+        }
+
+        h1 {
+            margin-left: 1%;
+            margin-top: 1%;
+            size: 100%;
+        }
+
+        .grid_space {
+            display: block;
+            margin: 0 auto;
+            margin-top: 3%;
+            max-width: 550px;
+            min-width: 550px;
+            max-height: 550px;
+            min-height: 550px;
+            filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+        }
+
+        #grid {
+            display: grid;
+        }
+
+        #grid>div {
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Etch-A-Sketch<a href="https://atblv.github.io/etch-a-sketch/" target="_blank"> <img src="GitHub-Mark-64px.png">
+            </a></h1>
+
+    </div>
+    <div id="grid" class="grid_space img_logo">
+    </div>
+
+    <script src="etch_a_sketch.js"></script>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
