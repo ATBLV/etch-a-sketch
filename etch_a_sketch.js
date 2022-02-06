@@ -33,7 +33,6 @@ function displayGridSize() {
 }
 
 function resetGrid() {
-    document.querySelectorAll('#grid>div').forEach(clear => clear.style.backgroundColor = "");
     document.getElementById('grid').innerHTML = "";
     gridSize = Number(prompt("Enter size of grid"));
     while ((gridSize > 64) || ((isNaN(gridSize)))) {
